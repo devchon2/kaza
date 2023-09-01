@@ -1,4 +1,4 @@
-import HomePage from './homePage/Homepage.jsx';
+import HomePage from './homePage/HomePage';
 import ErrorPage from './errorPage/Error'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
