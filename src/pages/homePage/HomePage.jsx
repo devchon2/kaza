@@ -1,6 +1,6 @@
 
-function HomePage(){
+export default function HomePage(){
+  console.log('HomePage Loaded')
   return <h1>Hello</h1>
 }
 
-export {HomePage}
