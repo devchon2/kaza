@@ -1,7 +1,9 @@
+import Cover from './Cover/Cover'
+
 export default function Main(){
   return(
     <>
-    <h1>Hello Main!</h1>
+    <Cover />
     </>
   )
 }

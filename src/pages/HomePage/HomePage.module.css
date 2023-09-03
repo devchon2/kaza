@@ -1,1 +1,2 @@
-@import '/src/components/Header/Header.module.css'
+@import '/src/components/Header/Header.module.css';
+@import '/src/components/Main/Main.module.css';
