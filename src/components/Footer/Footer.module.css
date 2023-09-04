@@ -1,0 +1,18 @@
+.Footer{
+  width:100%;
+  background-color: black;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.Footer_Logo{
+  height:40px;
+  margin:25px auto;
+}
+
+.Footer_Copyrights{
+  margin-bottom:25px;
+}

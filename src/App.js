@@ -3,7 +3,7 @@ import Datas from './datas/DatasControlers.js'
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage'
 import About from './pages/About/About'
-
+import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 
 console.log([Datas])
 export default function App() {
@@ -12,6 +12,9 @@ export default function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/About' element={<About />} />
+       {/* <Route path='/Profile' element={<Profile />} />*/ }
+        <Route path='/*' element={<ErrorPage />} />
+
       </Routes>
     </>
   )
