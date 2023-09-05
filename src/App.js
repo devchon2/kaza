@@ -8,7 +8,7 @@ import ErrorPage from './pages/ErrorPage/ErrorPage';
 console.log([Datas])
 export default function App() {
   return (
-    <>
+    
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/About' element={<About />} />
@@ -16,7 +16,6 @@ export default function App() {
         <Route path='/*' element={<ErrorPage />} />
 
       </Routes>
-    </>
   )
 }
 

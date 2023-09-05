@@ -1,4 +1,4 @@
-.App-Cover{
+.appCover{
   display :flex;
   margin :0 auto;
   width :100%;
@@ -7,7 +7,7 @@
   overflow :hidden;
 }
 
-.App-Cover-Img{
+.appCoverImg{
   height:100%;
   width:100%;
   -o-object-fit:cover;
