@@ -1,1 +1,4 @@
-@import './pages/HomePage/HomePage.module.css'
+@import './pages/HomePage/HomePage.module.css';
+@import './pages/About/About.module.css';
+@import './pages/ErrorPage/ErrorPage.module.css'
+
