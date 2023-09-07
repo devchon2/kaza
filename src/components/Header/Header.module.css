@@ -1,7 +1,4 @@
-@import './Nav/Nav.module.css';
-@import './Logo/Logo.module.css';
-
-header{
+.container{
   display:flex;
   justify-content:space-between;
   align-items:center;

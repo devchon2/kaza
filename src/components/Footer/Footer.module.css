@@ -1,4 +1,4 @@
-.Footer{
+.container{
   width:100%;
   background-color: black;
   display:flex;
@@ -11,11 +11,11 @@
   
 }
 
-.Footer_Logo{
+.Logo{
   height:40px;
   margin:25px auto;
 }
 
-.Footer_Copyrights{
+.Copyrights{
   margin-bottom:25px;
 }

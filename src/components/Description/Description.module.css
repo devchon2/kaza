@@ -1,0 +1,16 @@
+.descContainer{
+  border:1ps solid black;
+  width:300px;
+}
+
+.button{
+  width:100%;
+}
+
+.description.on{
+  display:flex;
+}
+
+.description.off{
+  display:none;
+}

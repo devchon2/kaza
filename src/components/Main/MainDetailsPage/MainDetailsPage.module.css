@@ -1,0 +1,9 @@
+.MainDetailsPage{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.fullContent,
+.listContent{
+  width:100%;
+}

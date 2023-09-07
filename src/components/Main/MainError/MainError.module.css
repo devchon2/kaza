@@ -1,4 +1,4 @@
-.Error-Main_Component{
+.MainComponent{
   height:100%;
   color:grey;
   color:#FF6060;
@@ -11,11 +11,15 @@
   
 }
 
-.Error-Main_Component_Msg{
+.MainComponentMsg{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   margin:25px;
 }
 
-.Error_404{
+.ErrorType{
   font-size:160px;
 }
 

@@ -1,1 +1,4 @@
-@import '../Cover/Cover.module.css'
+.mainAboutPage{
+  display:flex;
+  flex:1;
+}

@@ -1,0 +1,16 @@
+.equipContainer{
+  border:1ps solid black;
+  width:300px;
+}
+
+.button{
+  width:100%;
+}
+
+.listContent.on{
+  display:flex;
+}
+
+.listContent.off{
+  display:none;
+}

@@ -1,17 +1,21 @@
 import { Link } from 'react-router-dom'
+import style from './MainError.module.css'
+
 
 export default function MainErrorPage() {
   return (
-    <>
-      <div className="Error-Main_Component">
-        <div className="Error-Main_Component_Msg">
-          <h1 className="Error_404">404</h1>
+    
+      <main className={style.MainComponent}>
+        <div className={style.MainComponentMsg}>
+          <h1 className={style.ErrorType}>
+            404
+            </h1>
           <p>Oups! La page que vous demandez n'existe pas.</p>
         </div>
-        <Link className="BackLink" to="/">
+        <Link className={style.Backlink} to="/">
           Retourner a la page d'accueil
         </Link>
-      </div>
-    </>
+      </main>
+    
   );
 }

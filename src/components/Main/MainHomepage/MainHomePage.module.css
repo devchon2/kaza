@@ -1,8 +1,21 @@
-@import '../Cover/Cover.module.css';
 
 
-.HomePage_Main{
+.mainHomePage{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:stretch;
   flex:1;
+  padding-top:0px;
+}
+
+
+
+.cardsContainer{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:40px;
 }
 
 
