@@ -1,19 +1,15 @@
-import { useState } from "react";
 import style from "./Description.module.css";
 
-export default function Description({description}) {
-  const [Toggle, setToggle] = useState('off')
-  const handleClick = () => {
-    setToggle('on')
-  }
+export default function Description({description,action,state}) {
+  
 
   return (
     <div className={style.descContainer}>
-      <button onClick={handleClick} className={style.button + ' ' + Toggle} >
+      <button onClick={action} className={style.button + ' ' + state} >
         description
       </button >
-      <div className={style.description + ' ' + Toggle}>
-        {description}
+      <div className={style.description + ' ' + state}>
+        <p>{description}</p>
       </div>
     </div>
   )

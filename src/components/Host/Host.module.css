@@ -1,0 +1,30 @@
+.host {
+  display: flex;
+  justify-content:space-between;
+    
+}
+
+.left {
+  display: flex;
+  flex-direction:column;
+}
+
+.right {
+  display: flex;
+  flex-direction:column;
+  align-items:flex-end;
+}
+
+.title {
+  display: flex;
+}
+.location {
+  display: flex;
+}
+.hostname {
+  display: flex;
+}
+
+.rating {
+  display: flex;
+}

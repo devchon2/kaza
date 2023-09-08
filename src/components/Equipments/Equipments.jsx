@@ -1,20 +1,17 @@
-import { useState } from 'react'
-import style from './Equipments.module.css'
+import style from "./Equipments.module.css";
 
-export default function Equipments(equipments) {
-  const [Toggle, setToggle] = useState('off')
-  const handleClick = () => {
-    setToggle('on')
-  }
-
+export default function Description({equipments,action,state}) {
+  
+console.log(equipments)
   return (
     <div className={style.equipContainer}>
-      <button onClick={handleClick} className={style.button + ' ' + Toggle} >
-        equipments
+      <button onClick={action} className={style.button + ' ' + state} >
+        Equipements
       </button >
-      <div className={style.listContent + ' ' + Toggle}>
-        Hello Equipments!
-      </div>
+      <div className={style.equipmentsList + ' ' + state}>
+        {equipments.map(item => <p className={item}>{item}</p>)}
+        
+          </div>
     </div>
   )
 }

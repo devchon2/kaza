@@ -1,16 +1,16 @@
 .descContainer{
   border:1ps solid black;
-  width:300px;
+  width:50%
 }
 
 .button{
   width:100%;
 }
 
-.description.on{
+descContainer .description.true{
   display:flex;
 }
 
-.description.off{
+descContainer  .description.false{
   display:none;
 }

@@ -1,16 +1,25 @@
 .equipContainer{
   border:1ps solid black;
-  width:300px;
+  width:50%
 }
 
 .button{
   width:100%;
 }
 
-.listContent.on{
+.button{
+  width:100%;
+}
+
+.equipmentsList{
+  background-color: darkgrey;
+  
+}
+
+.equipmentsList.on{
   display:flex;
 }
 
-.listContent.off{
+.equipmentsList.off{
   display:none;
 }
