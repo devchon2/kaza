@@ -1,7 +1,7 @@
 .container {
   margin: 10px 0;
   display: flex;
-  flex-direction: flex-row;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
@@ -21,10 +21,7 @@
   text-decoration:none;
 }
 
-
-
-.nav  a.active{
-  text-decoration:underline;
-}
+nav .active{
+ text-decoration: underline}
 
 

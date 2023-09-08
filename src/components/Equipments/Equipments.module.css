@@ -16,10 +16,10 @@
   
 }
 
-.equipmentsList.on{
+.equipmentsList .true{
   display:flex;
 }
 
-.equipmentsList.off{
+.equipmentsList.false{
   display:none;
 }

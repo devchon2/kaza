@@ -9,7 +9,7 @@ console.log(equipments)
         Equipements
       </button >
       <div className={style.equipmentsList + ' ' + state}>
-        {equipments.map(item => <p className={item}>{item}</p>)}
+        {equipments.map(item => <p key={item} className={item}>{item}</p>)}
         
           </div>
     </div>

@@ -1,10 +1,10 @@
 .container{
-  height: 340px;
-  width:340px;  
+  height: 400px;
+  width:400px;  
   position: relative;
   overflow:hidden;
   border-radius:15px;
-  margin:25px 35px;
+  margin:25px auto;
 
 }
 

@@ -1,18 +1,17 @@
 .host {
   display: flex;
-  justify-content:space-between;
-    
+  justify-content: space-between;
 }
 
-.left {
+.leftSide {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 
-.right {
+.rightSide {
   display: flex;
-  flex-direction:column;
-  align-items:flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .title {
@@ -21,8 +20,42 @@
 .location {
   display: flex;
 }
-.hostname {
+.hostInfos {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hostName {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.hostName p {
+  text-align: end;
+}
+
+.hostPicture {
+  display: flex;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.tag {
+  margin: 10px;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #ff6060;
+  color: white;
 }
 
 .rating {
