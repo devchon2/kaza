@@ -16,7 +16,7 @@ setIndex(newIndex >= length ? 0 : newIndex);
 };
 
 return (
-<div className="carousel">
+<div className={style.carrousel}>
 <button onClick={handlePrevious}>Previous</button>
 <button onClick={handleNext}>Next</button>
 

@@ -8,10 +8,6 @@
   position :relative;
 }
 
-.cover >details{
-  height:400px;
-}
-
 .coverImg{
   height:100%;
   width:100%;

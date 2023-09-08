@@ -1,4 +1,12 @@
 .mainAboutPage{
   display:flex;
+  
   flex:1;
+}
+
+.collapseContainer{
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+  align-items:center;
 }

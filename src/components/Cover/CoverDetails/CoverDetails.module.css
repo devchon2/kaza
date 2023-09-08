@@ -1,4 +1,4 @@
-.container{
+.carrousel{
   display :flex;
   margin :10px auto;
   width :100%;
@@ -8,8 +8,6 @@
   position :relative;
 }
 
-
-
 .coverImg{
   height:100%;
   width:100%;
@@ -17,7 +15,6 @@
      object-fit:cover;
   -o-object-position: center;
      object-position:center;
-     
 }
 
 .title{
@@ -29,7 +26,6 @@
   align-items:center;
   opacity:0.3;    
   background-color:black;
-
 }
 
 .titleH1{
@@ -41,5 +37,4 @@
   padding:75px 0;
   font-size:40px;
   font-weight:500;
-
 }

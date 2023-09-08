@@ -9,7 +9,7 @@ export default function Collapsible({content,action,state, type}) {
         {type}
       </button >
       {state && <div className={style.content + ' '}>
-       {content.map(element => <p key={element} className={style.listItem}>{element}</p>)}
+       {content.map(element => <p key={content.indexOf(element)} className={style.listItem}>{element}</p>)}
       </div>}
     </div>
   )
