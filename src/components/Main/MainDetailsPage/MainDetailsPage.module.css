@@ -1,11 +1,12 @@
 .mainDetailsPage {
   display: flex;
   flex-direction: column;
-
   flex: 1;
 }
 .fullContent {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around;  
+  margin-bottom:134px;
+
 }
