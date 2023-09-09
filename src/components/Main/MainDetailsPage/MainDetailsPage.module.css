@@ -1,12 +1,11 @@
-.mainDetailsPage{
-  display:flex;
-  flex-direction:column;
+.mainDetailsPage {
+  display: flex;
+  flex-direction: column;
 
-  flex:1;
+  flex: 1;
 }
-.fullContent{
-  width:100%;
-  display:flex;
+.fullContent {
+  width: 100%;
+  display: flex;
   justify-content: space-around;
-
-  }
+}

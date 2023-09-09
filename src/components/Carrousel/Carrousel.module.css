@@ -6,10 +6,11 @@
   border-radius :15px;
   overflow :hidden;
   position :relative;
+  z-index:2;
 }
 
 .coverImg{
-  height:100%;
+  height:auto;
   width:100%;
   -o-object-fit:cover;
      object-fit:cover;
@@ -17,24 +18,19 @@
      object-position:center;
 }
 
-.title{
-  display:flex;
+.prev{
   position:absolute;
-  width:100%;
-  height:100%;
-  justify-content:center;
-  align-items:center;
-  opacity:0.3;    
-  background-color:black;
+  left:0;
+  top:50%;
+  transform: translate(50%, -50%);
+  z-index:1;
 }
 
-.titleH1{
-  height:100%;
-  width:100%;
-  color:white;
+.next{
   position:absolute;
-  text-align:center;
-  padding:75px 0;
-  font-size:40px;
-  font-weight:500;
+  right:0;
+  top:50%;
+  transform: translate(-50%, -50%);
+  z-index:1;
 }
+

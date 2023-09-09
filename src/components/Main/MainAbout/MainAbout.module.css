@@ -1,12 +1,12 @@
-.mainAboutPage{
-  display:flex;
-  flex-direction:column;
-  flex:1;
+.mainAboutPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.collapseContainer{
- display:flex;
- flex-direction:column;
- justify-content:center;
-  align-items:center;
+.collapseContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
