@@ -1,11 +1,15 @@
 .container{
-  width:100%;
-  background-color: black;
   display:flex;
+  width:100%;
+  max-width:100%;
+  background-color: black;
   flex-direction:column;
   justify-content:center;;
   align-items:center;
   color:white;
+  position:-webkit-sticky;
+  position:sticky;
+  bottom:0;
   
 
   

@@ -26,13 +26,14 @@ export default function MainAbout() {
     setSecurity(!Security)
   }
   return (
-    <>
+    <div className={style.mainAboutPage}>
       <Cover img={img} />
       <div className={style.collapseContainer}>
         <Collapsible action={handleFiability} state={Fiability} type='Fiabilité' content={['FiabilityContent']} />
         <Collapsible action={handleRespect} state={Respect} type='Respect' content={[respectContent]} />
         <Collapsible action={handleService} state={Service} type='Service' content={['ServiceContent']} />
         <Collapsible action={handleSecurity} state={Security} type='Sécurité' content={['SecurityContent']} />
-      </div></>
+      </div>
+    </div>
   );
 }
