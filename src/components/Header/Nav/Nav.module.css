@@ -7,8 +7,7 @@
   list-style: none;
 }
 
-.navLink1,
-.navLink2 {
+.inactive {
   display: flex;
   text-align: right;
   font-family: Montserrat;
@@ -21,7 +20,17 @@
   text-decoration:none;
 }
 
-nav .active{
+.active{
+  display: flex;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 20px 0 20px 20px;
+  color: #FF6060;
+  text-decoration:none;
  text-decoration: underline}
 
 

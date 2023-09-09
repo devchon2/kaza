@@ -5,6 +5,7 @@
   overflow:hidden;
   border-radius:15px;
   margin:25px auto;
+  background-color:black;
 
 }
 
@@ -15,6 +16,7 @@
      object-fit:cover;
   -o-object-position:center;
      object-position:center;
+    opacity:0.85;
 }
 
 .title{
