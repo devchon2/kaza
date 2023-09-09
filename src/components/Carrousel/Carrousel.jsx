@@ -10,12 +10,12 @@ const length = pictures.length;
 
 const handlePrevious = () => {
 const newIndex = index - 1;
-setIndex(newIndex < 0 ? length - 1 : newIndex);
+setIndex(newIndex === -1 ? length - 1 : newIndex);
 };
 
 const handleNext = () => {
 const newIndex = index + 1;
-setIndex(newIndex >= length ? 0 : newIndex);
+setIndex(newIndex === length    ? 0 : newIndex);
 };
 
 return (
