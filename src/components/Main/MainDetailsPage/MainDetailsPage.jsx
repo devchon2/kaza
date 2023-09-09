@@ -12,7 +12,7 @@ export default function MainDetailsPage({ pageId }) {
   
   return (
       <main className={style.mainDetailsPage}>
-        <Carrousel title={title} pictures={[cover, ...pictures]} />
+        <Carrousel title={title} pictures={[...pictures]} />
           <Host title={title} location={location} tags={tags}  rating={rating} hostname={name} hostPicture={picture}/>          
         <div className={style.fullContent}>
           <Collapsible type='Description' content={[description]}  />
