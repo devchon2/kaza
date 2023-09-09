@@ -6,6 +6,6 @@ const condition = ({isActive}) => (isActive ? (`${style.navLink} ${style.active}
   return (
     <nav className={style.container}>    
           <NavLink className={condition} to="/">Accueil</NavLink>
-          <NavLink className={condition} to="/About">A propos</NavLink>
+          <NavLink className={condition} to="/About">A Propos</NavLink>
     </nav>
   );}

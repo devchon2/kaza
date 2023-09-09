@@ -18,6 +18,13 @@
      object-position:center;
 }
 
+.arrowActive{
+  display:flex;
+}
+.arrowInactive{
+  display:none;
+}
+
 .prev{
   position:absolute;
   left:0;
@@ -33,4 +40,19 @@
   transform: translate(-50%, -50%);
   z-index:1;
 }
+
+.counter{
+  display:flex;
+  align-items:end;
+  bottom:5px;
+  font-size:16px;;
+  right:50%;
+  transform:translate(50%);
+  height:100%;
+  position:absolute;
+  color:white;
+
+}
+
+
 

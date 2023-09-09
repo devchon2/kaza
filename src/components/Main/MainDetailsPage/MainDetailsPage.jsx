@@ -6,8 +6,7 @@ import Carrousel from '../../Carrousel/Carrousel.jsx';
 
 export default function MainDetailsPage({ pageId }) {
   const item = Datas.find(data => data.id === pageId);
-  console.log(item)
-  const {  title, location, rating, host, description,equipments,cover,tags, pictures } = item
+  const {  title, location, rating, host, description,equipments,tags, pictures } = item
   const { name, picture } = host
   
   return (
@@ -15,8 +14,8 @@ export default function MainDetailsPage({ pageId }) {
         <Carrousel title={title} pictures={[...pictures]} />
           <Host title={title} location={location} tags={tags}  rating={rating} hostname={name} hostPicture={picture}/>          
         <div className={style.fullContent}>
-          <Collapsible type='Description' content={[description]}  />
-          <Collapsible type='Équipements' content={equipments}  />
+          <Collapsible type='medium' name='Description' content={[description]}  />
+          <Collapsible type='medium' name='Équipements' content={equipments}  />
         </div>
     </main >
     )
