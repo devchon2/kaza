@@ -10,7 +10,7 @@ export default function MainErrorPage() {
           <h1 className={style.ErrorType}>
             404
             </h1>
-          <p>Oups! La page que vous demandez n'existe pas.</p>
+          <p className={style.oups}>Oups! La page que vous demandez n'existe pas.</p>
         </div>
         <Link className={style.Backlink} to="/">
           Retourner a la page d'accueil

@@ -33,3 +33,26 @@
  
 
 }
+
+@media  (max-width:425px){
+.BackLink{
+  
+}
+.MainComponent{
+  margin:0;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.MainComponentMsg{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.oups{
+  text-align:center;
+  font-size:16px;
+  width:90%
+}
+}

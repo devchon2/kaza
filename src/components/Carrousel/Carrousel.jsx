@@ -18,10 +18,7 @@ const newIndex = index + 1;
 setIndex(newIndex >= length ? 0 : newIndex);
 };
 
-const arrowBlock = () => (
-  <></>
 
-)
 const counter = `${index+1}/${length}`
 const display = length <= 1 ? style.arrowInactive : style.arrowActive
   

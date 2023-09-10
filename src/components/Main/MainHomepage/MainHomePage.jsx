@@ -7,7 +7,7 @@ import coverImg from "../../../assets/pictures/HomePageCover.png";
 export default function MainHomePage() {
   return (
     <main className={style.mainHomePage}>
-      <Cover type="main" title="Chez vous, partout et ailleurs" img={coverImg} />
+      <Cover type="main" title='Chez vous, partout et ailleurs' img={coverImg} />
       <div className={style.fullContainer}>
         <div className={style.cardsContainer}>
           {Datas.map((item, index) => (

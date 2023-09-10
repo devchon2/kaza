@@ -15,7 +15,7 @@ export default function Host({
       <div className={style.left}>
         <h1 className={style.title}>{title}</h1>
         <p className={style.location}>{location}</p>
-        {tags.map(tag => <label key={tag} className={style.tag}>{tag}</label>)}
+        <div className={style.tagsContainer}>{tags.map(tag => <label key={tag} className={style.tag}>{tag}</label>)}</div>
       </div>
 
       <div className={style.right}>

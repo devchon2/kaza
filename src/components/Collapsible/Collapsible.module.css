@@ -38,14 +38,13 @@
   display:flex;
   color:white;
 }
-.arrowUp{
+.arrowUp,.arrowDown{
   width:35px;
   height:20px;
 }
 
 .arrowDown{
-  width:35px;
-  height:20px;
+  
   transform: rotate(180deg);
 }
 
@@ -65,3 +64,28 @@
   padding:5px ;
 }
 
+@media  (max-width:425px){
+ .collapseHeader{
+  padding:5px;
+ }
+ 
+  .large{
+  width:100%;
+  margin:10px 0
+ }
+
+ .name{
+  font-size:13px;
+ }
+
+ .arrowUp,.arrowDown{
+  width:24px;
+  height:14px;
+
+  margin:10px;
+}
+
+.medium{
+  width:100%;
+}
+}

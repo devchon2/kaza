@@ -37,11 +37,23 @@
   display:flex;
   justify-content:center;
   align-items:center;
-  
+  height:100%;
   color:white;
   text-align:center;
   padding:75px 0;
   font-size:48px;
   font-weight:500;
- z-index:99;
+ z-index:2;
+}
+
+@media (max-width:425px){
+ .cover{
+  height:20px;
+ }
+ 
+  .titleH1{
+  text-align:start;
+  font-size:24px;
+  width:80%;
+ }
 }

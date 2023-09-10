@@ -1,6 +1,6 @@
 import style from './Cover.module.css'
 export default function Cover ({type,title,img}) {
-  const titleDisplay = type === 'main' ? <h1 className={style.titleH1}>Chez vous et partout ailleurs</h1> : ''
+  const titleDisplay = type === 'main' ? <h1 className={style.titleH1}>{title}</h1> : ''
 
   return (
     <section className={style.cover + ' ' + type}>
