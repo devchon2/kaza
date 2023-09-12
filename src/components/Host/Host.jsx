@@ -1,4 +1,5 @@
 import style from "./Host.module.css";
+import Rating from "./Rating/Rating.jsx";
 
 export default function Host({
   title,
@@ -9,6 +10,8 @@ export default function Host({
   tags
 }) {
   const [name, lastName] = hostname.split(" ");
+  
+
 
   return (
     <section className={style.host}>
@@ -26,7 +29,7 @@ export default function Host({
           </div>
           <img className={style.hostPicture} src={hostPicture} alt={`portrait de ${hostname}`}></img>
         </div>
-        <div className={style.rating}>{rating}</div>
+        <Rating rate={rating}/>
       </div>
     </section>
   );

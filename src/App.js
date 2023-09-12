@@ -13,7 +13,7 @@ export default function App() {
         <Route path='/About' element={<AboutPage />} />
        <Route  path='/Details/:id' element={<DetailPage />} />
         <Route path='/404' element={<ErrorPage />} />
-        <Route  path='/*' element={<Navigate to='/404'/>} />
+        <Route  path='*' element={<Navigate to='/404'/>} />
 
       </Routes>
   )

@@ -16,7 +16,7 @@ export default function MainAbout() {
   
   return (
     <div className={style.mainAboutPage}>
-      <Cover img={img} type='detail' />
+      <Cover img={img} type='about' />
       <div className={style.collapseContainer}>
         <Collapsible  type='large' name='Fiabilité' content={[FiabilityContent]} />
         <Collapsible  type='large' name='Respect' content={[respectContent]} />
