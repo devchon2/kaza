@@ -1,3 +1,4 @@
+import Tag from "../Tags/Tag.jsx";
 import style from "./Host.module.css";
 import Rating from "./Rating/Rating.jsx";
 
@@ -18,7 +19,7 @@ export default function Host({
       <div className={style.left}>
         <h1 className={style.title}>{title}</h1>
         <p className={style.location}>{location}</p>
-        <div className={style.tagsContainer}>{tags.map(tag => <label key={tag} className={style.tag}>{tag}</label>)}</div>
+        <div className={style.tagsContainer}>{tags.map(tag => <Tag key={tag} tag={tag}/>)}</div>
       </div>
 
       <div className={style.right}>

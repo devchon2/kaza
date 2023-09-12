@@ -21,9 +21,9 @@ export default function Collapsible({content,name, type}) {
 
   return (
     <div className={styleType}>
-      <div  className={style.collapseHeader} >
+      <div  onClick={handleCollapse} className={style.collapseHeader} >
         <p className={style.name}>{name}</p> 
-        <img onClick={handleCollapse} className={clsName} role='button' src={arrowUp} alt="Collapse" />
+        <img  className={clsName}  src={arrowUp} alt="Collapse" />
       </div >
       {Toggle.state && <div className={style.content + ' '}>
        {content.map(element => <p key={content.indexOf(element)} className={style.listItem}>{element}</p>)}

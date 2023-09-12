@@ -49,15 +49,6 @@
   height: 50px;
 }
 
-.tag {
-  margin: 10px 10px 10px 0;
-  display: inline-block;
-  border-radius: 25px;
-  padding: 5px 10px;
-  font-size: 14px;
-  background-color: #ff6060;
-  color: white;
-}
 
 .rating {
   display: flex;

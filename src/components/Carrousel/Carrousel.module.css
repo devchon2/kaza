@@ -54,6 +54,10 @@
 
 }
 
+.hiddenCounter{
+  display:none;
+}
+
 
 @media  (max-width:425px){
   .prev{

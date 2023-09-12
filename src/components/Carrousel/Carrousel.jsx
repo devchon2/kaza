@@ -20,16 +20,16 @@ setIndex(newIndex >= length ? 0 : newIndex);
 
 
 const counter = `${index+1}/${length}`
-const display = length <= 1 ? style.arrowInactive : style.arrowActive
-  
+const displayArrow = length <= 1 ? style.arrowInactive : style.arrowActive
+const displayCounter = length > 1 ? style.counter : style.hiddenCounter
 
 
 return (
 <div className={style.carrousel}>
   <img className={style.coverImg} src={pictures[index]} alt={title} />
-  <img className={`${style.prev} ${display}`} src={left} onClick={handlePrevious} alt='Previous ' ></img>
-<div className={style.counter}>{counter}</div>
-<img className={`${style.next} ${display}`} src={right} onClick={handleNext} alt='Next ' ></img>
+  <img className={`${style.prev} ${displayArrow}`} src={left} onClick={handlePrevious} alt='Previous ' ></img>
+<div className={displayCounter}>{counter}</div>
+<img className={`${style.next} ${displayArrow}`} src={right} onClick={handleNext} alt='Next ' ></img>
 
 </div>
 );
