@@ -6,7 +6,7 @@
 .fullContent {
   width: 100%;
   display: flex;
-  justify-content: space-around;  
+  justify-content: space-between;  
   padding-bottom:134px;
 
 }
@@ -14,7 +14,7 @@
 @media  (max-width:425px){
   .fullContent{
     flex-direction:column;
-    align-items:space-between;
+    align-items:center;
   padding:30px 0;    }
 
   .mainDetailsPage{
