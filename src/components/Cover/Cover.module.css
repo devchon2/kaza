@@ -58,7 +58,7 @@
  z-index:2;
 }
 
-@media (max-width:425px){
+@media (max-width:375px){
  .main{
   height:20px;
   margin:0 20px ;

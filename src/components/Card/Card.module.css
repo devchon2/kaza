@@ -32,7 +32,7 @@ font-style: normal;
 font-weight: 500;
 }
 
-@media (max-width: 425px){
+@media (max-width: 375px){
   .container{
     margin:25px 0;
     width:100%;

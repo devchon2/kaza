@@ -5,3 +5,8 @@
   height:100vh;
 }
 
+@media  (max-width:375px){
+  .AboutPage{
+    width:100%;
+  }
+}

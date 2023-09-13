@@ -65,7 +65,7 @@
   padding:5px ;
 }
 
-@media  (max-width:425px){
+@media  (max-width:375px){
  .collapseHeader{
   padding:5px;
  }

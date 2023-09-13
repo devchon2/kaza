@@ -8,7 +8,7 @@
   background-color:transparent;
 }
 
-@media (max-width:425px){
+@media (max-width:375px){
   .container{
     margin:20px 0;
   }

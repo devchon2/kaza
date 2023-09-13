@@ -1,19 +1,18 @@
-.inactiveStars{
-  display:flex;
-  margin:0 3px;
-  height:28px;
-  width:28px;
+.inactiveStars {
+  display: flex;
+  margin: 0 3px;
+  height: 28px;
+  width: 28px;
 }
 
-.activeStars{
-  display:flex;
-  margin:0 3px;
-  height:28px;
-  width:28px;
-  
+.activeStars {
+  display: flex;
+  margin: 0 3px;
+  height: 28px;
+  width: 28px;
 }
 
-.rating{
-  display:flex;
-  
+.rating {
+  display: flex;
+  margin: 20px 0;
 }
