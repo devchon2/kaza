@@ -70,19 +70,27 @@
 
 @media (max-width:425px){
  .main{
-  height:20px;
+  height:100px;
+  max-height:100px;
+  min-height:unset;
   margin:0 20px ;
   width:unset;
   border-radius:15px;
  }
 
+ 
+
  .about{
   border-radius:15px;
+  height:100px;
+  max-height:100px;
+  min-height:unset;
  }
  
   .titleH1{
   text-align:start;
   font-size:24px;
   width:80%;
+
  }
 }

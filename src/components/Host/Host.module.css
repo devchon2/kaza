@@ -58,6 +58,13 @@
   display:flex;
 }
 
+@media (max-width: 1240px){
+  .host{
+    padding:0 25px;
+    width:100%;
+  }
+}
+
 @media  (max-width:425px){
   .host{
     flex-direction:column;

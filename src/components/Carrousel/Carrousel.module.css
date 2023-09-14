@@ -57,9 +57,28 @@
 .hiddenCounter{
   display:none;
 }
+@media (max-width: 1240px){
+  .carrousel{
+    border-radius:unset;
+  
+  }
 
+  .prev{
+    width:24px;
+    height:40px;
+  }
+  .next{
+    width:24px;
+    height:40px;
+  }
+
+}
 
 @media  (max-width:425px){
+  .carrousel{
+    border-radius:15px;
+  }
+
   .prev{
     width:12px;
     height:20px;
