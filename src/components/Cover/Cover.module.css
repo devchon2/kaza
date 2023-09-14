@@ -58,11 +58,26 @@
  z-index:2;
 }
 
+@media (max-width: 1240px){
+  .about{
+    border-radius:unset;
+  }
+
+  .main{
+    border-radius:unset;
+  }
+}
+
 @media (max-width:425px){
  .main{
   height:20px;
   margin:0 20px ;
   width:unset;
+  border-radius:15px;
+ }
+
+ .about{
+  border-radius:15px;
  }
  
   .titleH1{

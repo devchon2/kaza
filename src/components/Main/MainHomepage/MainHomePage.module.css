@@ -26,6 +26,12 @@
   
 }
 
+@media (max-width: 1240px){
+  .fullContainer{
+    border-radius:unset;;
+  }
+}
+
 @media (max-width:425px){
   .fullContainer{
     background-color:white;

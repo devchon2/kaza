@@ -27,7 +27,6 @@
   text-decoration: underline
 }
 
-
  @media  (max-width: 425px) {
   .container {
     width:60%;
