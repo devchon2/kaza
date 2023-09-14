@@ -11,7 +11,7 @@
 
 }
 
-@media  (max-width:375px){
+@media  (max-width:425px){
   .fullContent{
     flex-direction:column;
     align-items:center;
