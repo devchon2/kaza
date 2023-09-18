@@ -9,11 +9,9 @@ import Datas from "../../datas/DatasControlers.js";
 export default function DetailsPage() {
   const urlIdObject = useParams('id');
   const { id } = urlIdObject;
-  console.log(id);
 
   // Vérifie si l'ID existe dans les données fournies
   const isExist = Datas.map(data => data.id).includes(id);
-  console.log(isExist);
 
   if (isExist) {
     return (

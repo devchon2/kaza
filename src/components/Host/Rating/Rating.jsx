@@ -5,9 +5,7 @@ import inactive from '../../../assets/pictures/inactiveStar.png';
 
 // Composant Rating qui affiche une note sous forme d'étoiles
 function Rating({ rate }) {
-  console.log(Math.random());
 
-  console.log('rate', rate);
   let fullstars = [];
 
   // Boucle pour afficher les étoiles actives
@@ -23,7 +21,6 @@ function Rating({ rate }) {
       fullstars.push(<img key={Math.random()} className={style.inactiveStars} src={inactive} alt={rate} />);
     }
   }
-  console.log(fullstars);
 
   return (
     <div className={style.rating}>{fullstars}</div>
