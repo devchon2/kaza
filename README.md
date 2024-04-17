@@ -1,3 +1,10 @@
+# Kasa - Développement d'une application de location de logements
+
+## Objectif du Projet
+
+Ce projet vise à développer le front-end de Kasa, une application web de location de logements en utilisant React et React Router. L'objectif est de créer une interface utilisateur interactive en mettant en place des composants React et en développant les routes nécessaires avec React Router.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
