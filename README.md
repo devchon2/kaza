@@ -1,77 +1,137 @@
-# Kasa - Développement d'une application de location de logements
+# Kasa — Plateforme de locations (React + React Router)
 
-## Objectif du Projet
+[![CI](https://img.shields.io/badge/CI-none-lightgrey)]() [![Licence](https://img.shields.io/badge/Licence-MIT-blue)]()
 
-Ce projet vise à développer le front-end de Kasa, une application web de location de logements en utilisant React et React Router. L'objectif est de créer une interface utilisateur interactive en mettant en place des composants React et en développant les routes nécessaires avec React Router.
+> Projet : **Développez une application Web avec React et React Router** — Kasa.  
+> **Objectif général :** démarrer un projet React et implémenter l’ensemble du front (composants, routes, gallery, collapse) en respectant les maquettes Figma (responsive) et les contraintes UX (gallery looping, collapse closed by default, images cropped & centered).
 
+## 📚 Table des matières
+- [Description](#-description)
+- [Objectifs pédagogiques](#-objectifs-p%C3%A9dagogiques)
+- [Compétences & Preuves](#-comp%C3%A9tences--preuves)
+- [Stack & Versions](#-stack--versions)
+- [Structure du projet](#-structure-du-projet)
+- [Fonctionnalités clés](#-fonctionnalit%C3%A9s-cl%C3%A9s)
+- [Installation & Lancement](#-installation--lancement)
+- [Available Scripts](#available-scripts)
+- [Tests](#-tests)
+- [Démo & Captures](#-d%C3%A9mo--captures)
+- [Roadmap](#-roadmap)
+- [Licence](#-licence)
+- [Contact](#-contact)
+- [English version](#english-version)
 
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Description
+Kasa est une refonte front d’un site de location d’appartements. Le projet vise à produire une SPA React conforme aux maquettes Figma, avec routing (React Router), galerie d’images (Gallery) et composants réutilisables (Collapse, Cards). Les données sont fournies sous forme d’un fichier JSON (20 annonces) pour construire l’UI sans backend durant le développement.
 
-## Available Scripts
+> **Résultats clés** : app React fonctionnelle • routing client • gallery accessible et comportement « looping » • collapses fermés par défaut.
 
-In the project directory, you can run:
+## 🎯 Objectifs pédagogiques
+- Initialiser une app React (Create React App ou Vite).  
+- Implémenter React Router pour la navigation (routes dynamiques pour annonces).  
+- Développer composants réutilisables : Gallery (carousel), Collapse (accordéon), Cards.  
+- Intégrer les données depuis un fichier JSON (mock).  
+- Respecter la maquette (images coupées/centrées, gallery hauteur fixe, responsive).
 
-### `npm start`
+## 🧠 Compétences & Preuves
+| Exigence pédagogique | Compétence recrutée | Mise en œuvre | Preuves (fichiers) |
+|---|---|---:|---|
+| Routing | **React Router** | Routes dynamiques pages logement / 404 | `src/App.jsx`, `src/routes/*` |
+| Gallery | **JS / React** | Carousel looping, height fixed, prev/next hide logic | `src/components/Gallery.jsx` |
+| UI & layout | **Responsive CSS** | Images crop/center, desktop-first ou mobile-first selon maquette | `src/styles/*`, `public/assets/*` |
+| Data | **JSON mock** | 20 annonces pour peupler l’UI | `data/logements.json` (ou `public/data/`) |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*(Les fichiers cités correspondent aux conventions attendues dans le brief — adapte les chemins si ton repo utilise d’autres noms.)*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧰 Stack & Versions
+| Tech | Rôle |
+|---|---|
+| React | UI (CRA ou Vite) |
+| React Router | Navigation |
+| CSS3 / SASS | Styling |
+| Node / npm | Dev tooling |
+| JSON | Données mock |
 
-### `npm test`
+*(Consulte `package.json` pour versions exactes.)*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🗂️ Structure du projet (exemple)
+```txt
+kasa/
+├─ public/
+│  └─ data/logements.json
+├─ src/
+│  ├─ components/
+│  │  ├─ Gallery.jsx
+│  │  ├─ Collapse.jsx
+│  │  └─ Card.jsx
+│  ├─ pages/
+│  ├─ services/
+│  │  └─ dataService.js
+│  └─ App.jsx
+└─ README.md
+```
 
-### `npm run build`
+## ✅ Fonctionnalités clés
+* [x] Routes client (home, logement/:id, about, 404).  
+* [x] Gallery : prev/next avec looping, masque des boutons si 1 image, hauteur fixe.  
+* [x] Collapse : fermés par défaut, accessible.  
+* [x] Layout responsive fidèle à la maquette (images centrées/coupées).  
+* [x] Données mock via JSON (20 annonces).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚡ Installation & Lancement
+```bash
+# 1) Cloner
+git clone https://github.com/devchon2/Kasa.git
+cd Kasa
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 2) Installer
+npm install   # ou yarn install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 3) Lancer en dev
+npm start     # ou yarn start
+# Ouvrir http://localhost:3000
+```
+> Si le projet utilise Vite : `npm run dev`.
 
-### `npm run eject`
+## 📜 Available Scripts
+```bash
+npm start
+npm test
+npm run build
+npm run lint
+```
+(Vérifier les scripts réels dans `package.json`.)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧪 Tests
+* Tests manuels : gallery (loop, hide buttons), collapse states, responsive sur 1024×768+.  
+* Recommandé : tests unitaires composants (Jest + React Testing Library).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎥 Démo & Captures
+* Livrable attendu : repo GitHub public + ZIP pour soutenance avec captures desktop/tablet/mobile et démonstration de la gallery.  
+* Indiquer URL publique (GitHub Pages / Netlify) si déployé.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🗺️ Roadmap
+* Ajouter tests E2E (Cypress) pour parcours navigation & gallery.  
+* Automatiser CI (build + lint + tests).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📝 Licence
+MIT — ajouter `LICENSE` à la racine si nécessaire.
 
-## Learn More
+## 📫 Contact
+Rachid Chon — `rchon@rchon-dev.fr`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## English version
 
-### Code Splitting
+<details>
+<summary>🇬🇧 Click to expand</summary>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Kasa — Rental platform (React + React Router)
 
-### Analyzing the Bundle Size
+> Built from the training brief. Goal: implement a React SPA with routing, a fixed-height gallery, collapses and components following the Figma mockups.  
+> See the French version for full installation, features, and structure.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
