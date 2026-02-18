@@ -1,0 +1,16 @@
+{
+  "short_name": "Kaza App",
+  "name": "Projet 11 OC",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "12x8",
+      "type": "image/x-icon"
+    }
+    
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

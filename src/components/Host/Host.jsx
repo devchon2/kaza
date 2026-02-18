@@ -13,7 +13,7 @@ export default function Host({
 }) {
   // Sépare le nom et le prénom de l'hôte
   const [name, lastName] = hostname.split(" ");
-  
+
   return (
     <section className={style.host}>
       <div className={style.left}>
@@ -21,7 +21,7 @@ export default function Host({
         <p className={style.location}>{location}</p>
         <div className={style.tagsContainer}>
           {/* Affiche les tags en utilisant le composant Tag */}
-          {tags.map(tag => <Tag key={tag} tag={tag}/>)}
+          {tags.map(tag => <Tag key={tag} tag={tag} />)}
         </div>
       </div>
 

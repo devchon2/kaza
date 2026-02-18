@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kaza/static/css/main.04c1f8ea.css",
+    "main.js": "/kaza/static/js/main.4a8616bf.js",
+    "static/media/HomePageCover.png": "/kaza/static/media/HomePageCover.19221376a0aa2549c135.png",
+    "static/media/AboutCover.png": "/kaza/static/media/AboutCover.57a963309bd29e7ea13b.png",
+    "index.html": "/kaza/index.html",
+    "main.04c1f8ea.css.map": "/kaza/static/css/main.04c1f8ea.css.map",
+    "main.4a8616bf.js.map": "/kaza/static/js/main.4a8616bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04c1f8ea.css",
+    "static/js/main.4a8616bf.js"
+  ]
+}
